@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KAZ Migration</title>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<!-- <script src="http://d3js.org/topojson.v1.min.js"></script> -->
+	<script src="js/d3-extended.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="section row">
+			<div id="description" class="twelve columns">
+				<h1>Kazakhstan international migration</h1>
+				<p>See where people move to and from, and how trends have evolved over time for different migration types.</p>
+			</div>
+		</div>
+		<div class="section row">
+			<div class="slidecontainer">
+				<input type="range" min="2000" max="2017" value="2000" step="1" id="year-slider" class="slider" onchange="onSliderChange()">
+				<div class="sliderticks">
+					<p>2000</p>
+					<p>2001</p>
+					<p>2002</p>
+					<p>2003</p>
+					<p>2004</p>
+					<p>2005</p>
+					<p>2006</p>
+					<p>2007</p>
+					<p>2008</p>
+					<p>2009</p>
+					<p>2010</p>
+					<p>2011</p>
+					<p>2012</p>
+					<p>2013</p>
+					<p>2014</p>
+					<p>2015</p>
+					<p>2016</p>
+					<p>2017</p>
+				</div>
+			</div>
+		</div> 
+		<div class="section row">
+			<div id="map" class="seven columns">
+				<svg class="chart"></svg>
+				<div class="tooltip"></div>
+			</div>
+			<div id="tornado-chart" class="five columns">
+				<svg class="legend"></svg>
+				<svg class="chart"></svg>
+				<div class="tooltip"></div>
+			</div>
+		</div> 
+		<div class="section row">
+			<div id="footer" class="lightgray">
+				Source: <a href="http://stat.gov.kz" target="_blank" class='lightgray'>Kazakhstan Committee on Statistics</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>

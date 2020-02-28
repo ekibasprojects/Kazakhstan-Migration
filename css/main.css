@@ -1,0 +1,171 @@
+.container {
+  position:  static;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#description h1, #description p, #footer {
+  text-align: center;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+  margin-bottom: 30px;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;   
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: rgb(23, 173, 220);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(23, 173, 220);
+  cursor: pointer;
+}
+
+.sliderticks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.sliderticks p {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 1px;
+  background: #ddd;
+  height: 10px;
+  line-height: 40px;
+  margin: 0 0 20px 0;
+}
+
+#map, #tornado-chart {
+	height: 600px;
+}
+
+#tornado-chart .legend {
+  height: 20px;
+}
+
+#tornado-chart .legend text {
+  font-size: 12px;
+}
+
+.countries path {
+  fill: #ddd;
+}
+
+.arc-in {
+  stroke: rgb(23, 173, 220);
+}
+
+.arc-out {
+  stroke: rgb(255, 100, 20);
+}
+
+
+.bar-in {
+  fill: rgb(23, 173, 220);
+}
+
+.bar-out {
+  fill: rgb(255, 100, 20);
+}
+
+
+
+
+
+.grid-background {
+  fill: #ddd;
+}
+
+.grid line {
+  stroke: #fff;
+}
+
+.grid .minor line {
+  stroke-opacity: .5;
+}
+
+.grid text {
+  display: none;
+}
+
+.axis line {
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.axis path,
+.grid path {
+  display: none;
+}
+
+#tornado-chart text {
+  font: 10px sans-serif;
+}
+
+/*.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}*/
